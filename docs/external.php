@@ -15,7 +15,7 @@
  *    @package    PHPTuring
  *    @subpackage    external
  */
-    
+
 /**#@+
  * SimpleTest
  * @link http://simpletest.sf.net/
@@ -23,7 +23,7 @@
 class UnitTestCase {}
 #class WebTestCase {}
 /**#@-*/
-    
+
 /**#@+
  * WACT
  * Web Application Component Toolkit
@@ -35,7 +35,7 @@ class UnitTestCase {}
 #class DataSpace extends WACT {}
 #class DatasetDecorator extends WACT {}
 /**#@-*/
-    
+
 /**#@+
  * SPL
  * Standard PHP Library
@@ -43,5 +43,3 @@ class UnitTestCase {}
  */
 #class Exception {}
 /**#@-*/
-
-?>

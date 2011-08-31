@@ -1,12 +1,11 @@
 <?php
 /**
-*  Simple addition example
-*
-*  @author 		Simon Harris - pointbeing at users.sourceforge.net
-*  @package		PHPTuring
-*  @subpackage 	Examples
-*  @version		$Id: index.php,v 1.2 2005/11/15 10:30:40 pointbeing Exp $
-*/
+ * Simple addition example
+ *
+ * @author Simon Harris
+ * @package	PHPTuring
+ * @subpackage Examples
+ */
 
 error_reporting(E_ALL | E_STRICT);
 
@@ -31,6 +30,3 @@ $debugger->watch($machine);
 echo '<pre>';
 $machine->run($compiler->compile($prog), $parser->parse($tape));
 echo '</pre>';
-
-
-?>

@@ -1,51 +1,48 @@
 <?php
 /**
-*  SimpleDebugger class file
-*
-*  @author		Simon Harris - pointbeing at users.sourceforge.net
-*  @package		PHPTuring
-*  @subpackage	Implementation.Simple
-*  @version		$Id: SimpleDebugger.php,v 1.3 2005/11/15 10:30:40 pointbeing Exp $
-*/
+ * SimpleDebugger class file
+ *
+ * @author Simon Harris
+ * @package PHPTuring
+ * @subpackage Implementation.Simple
+ */
+
 
 /**
-*  SimpleDebugger class
-*
-*  @package		PHPTuring
-*  @subpackage	Implementation.Simple
-*/
-class SimpleDebugger implements phptObserver {
-	
+ * SimpleDebugger class
+ *
+ * @package PHPTuring
+ * @subpackage Implementation.Simple
+ */
+class SimpleDebugger implements phptObserver
+{
 
 	/**
-	*  @var Machine
-	*/
+	 * @var Machine
+	 */
 	private $machine;
-	
+
 	/**
-	*  @var int
-	*/
+	 * @var int
+	 */
 	private $step = 0;
-		
-	
+
+
 	/**
-	* Tell the debugger which Machine to subscribe to
-	*
-	*  @access public
-	*  @param Machine $machine
-	*/
+	 * Tell the debugger which Machine to subscribe to
+	 *
+	 * @param Machine $machine
+	 */
 	public function watch(Machine $machine)
 	{
 		$this->machine = $machine;
-		$this->machine->registerObserver($this);		
+		$this->machine->registerObserver($this);
 	}
-	
+
 
 	/**
-	*  Notify the Observer
-	*
-	*  @access public
-	*/
+	 * Notify the Observer
+	 */
 	public function notify()
 	{
 		$head = new Head();
@@ -55,8 +52,5 @@ class SimpleDebugger implements phptObserver {
 		echo "-----------------------\n";
 		$this->step++;
 	}
-		
+
 }
-
-
-?>
