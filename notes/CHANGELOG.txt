@@ -1,0 +1,9 @@
+Changelog
+---------
+
+
+Since 0.1a release
+------------------
+
+Renaming interfaces to prevent name clash with PHP5.1 built-in Observer
+

@@ -1,0 +1,30 @@
+Requirements
+------------
+
+- PHP Version 5.0 or above
+- (To run the test suite) SimpleTest version 1 or above, available from 
+	http://sourceforge.net/projects/simpletest
+
+
+Installation
+------------
+
+Should run pretty much out of the box, just unzip into your webspace. To run the
+tests you'll need to specify the path to SimpleTest in tests/index.php
+
+
+Bugs/comments
+-------------
+
+Any feedback/queries are most welcome at this early stage. Either contact
+pointbeing at users.sourceforge.net, or through the sourceforge project page:
+
+	http://sourceforge.net/projects/phpturing
+
+
+Todo
+----
+
+Probably plenty. It would be great to be able to include more example programs
+and also compilers for different syntaxes.
+
